@@ -17,55 +17,55 @@ const END_QUOTES = "```"
 
 export const TOOLBAR = Object.freeze({
   [OPTION.BOLD]: {
-    text: "Bold ⌘+Shift+B",
+    text: "Bold Ctrl+Shift+B",
     startTag: "**",
     endTag: "**"
   },
   [OPTION.ITALIC]: {
-    text: "Italic ⌘+Shift+I",
+    text: "Italic Ctrl+Shift+I",
     startTag: "*",
     endTag: "*"
   },
   [OPTION.SIZE]: {
-    text: "Heading ⌘+Shift+H",
+    text: "Heading Ctrl+Shift+H",
     startTag: "#"
   },
   [OPTION.STRIKE]: {
-    text: "Strike ⌘+Shift+S",
+    text: "Strike Ctrl+Shift+S",
     startTag: "~~",
     endTag: "~~"
   },
   [OPTION.LIST]: {
-    text: "Bullet List ⌘+Shift+L",
+    text: "Bullet List Ctrl+Shift+L",
     startTag: "- "
   },
   [OPTION.CHECK_BOX]: {
-    text: "List ⌘+Shift+C",
+    text: "List Ctrl+Shift+C",
     startTag: "- [ ] "
   },
   [OPTION.BLOCK_QUOTE]: {
-    text: "Blockquote ⌘+Shift+Q",
+    text: "Blockquote Ctrl+Shift+Q",
     startTag: "> "
   },
   [OPTION.CODE]: {
-    text: "Code ⌘+Shift+D",
+    text: "Code Ctrl+Shift+D",
     startTag: '```javascript ',
     endTag: END_QUOTES
   },
   [OPTION.TABLE]: {
-    text: "Table ⌘+Shift+T",
+    text: "Table Ctrl+Shift+T",
     startTag:
       `| Name | Heading |
 |--|--|
 | Foo  | Bar |`
   },
   [OPTION.LINK]: {
-    text: "Link ⌘+Shift+K",
+    text: "Link Ctrl+Shift+K",
     startTag: `[${DESC}](`,
     endTag: ")"
   },
   [OPTION.IMAGE]: {
-    text: "Image ⌘+Shift+G",
+    text: "Image Ctrl+Shift+G",
     startTag: `![${DESC}](`,
     endTag: ")"
   }
@@ -108,7 +108,7 @@ Thanks goes to these wonderful people
 			<a href="https://github.com/pjijin" title="Tools">🔧</a>
 		</td>
 		<tr>
-		</table>`
+		</table>`;
 
 export const CONTRIBUTION_GUIDE = `
 Contributing
@@ -134,89 +134,7 @@ export const LICENCE = `# License
 
 export const SAMPLE =
   `
-# CodeKeep
+# Markdown 编辑器
 
-🗂 Organize your Code Snippets by assigning labels or grouping into folders. Generate Code Screenshots, Share and Discover reusable snippets.
-
-
-
-[![CodeKeep](https://i.imgur.com/zG3wLNt.png 'Codekeep')]()
-
-✅ Checkout: <a href="https://codekeep.io/" target="_BLANK">https://codekeep.io</a>
-
-  <p align="center">
-   Made with ❤️ by <a href="https://twitter.com/JP1016v1"><img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/jp1016v1?style=social"> </a>
-  </p>
-
-
-## Why Codekeep ?
-👉Reduce Context Switching 
-Switching between projects to find reusable snippets, Store snippets here for later use.
-
-👉Keep your notes here
-Use CodeKeep while learning to create snippets containing the summary.
-
-👉Search for snippets
-Quickly find reusable and modular snippets.
-
-👉Reuse snippets
-Import snippets using CodeKeep extension, for later reference.
-
-## ✨ Features
-
-⚡️Create Snippets Quickly
-
-Press 'Paste' anywhere on the website to launch the 'Add Snippet' Dialog.
-
-![copy](https://i.imgur.com/uy2RIOt.png)
-
-
-⚡️Organize into Folders
-
-Share your folder & bookmark folders of other users, if you found it useful
-
-![copy](https://i.imgur.com/nI33OqR.png)
-
-
-⚡️Assign Labels
-
-Organize Code Snippets by creating labels, filter snippets by label
-
-![copy](https://i.imgur.com/GaQ0g9b.png)
-
-
-⚡️Feature rich Screenshot editor
-
-Choose templates, Add Images, Background and Social accounts in one click.
-
-![copy](https://i.imgur.com/Q0cH4Y3.png)
-
-
-⚡️Import/Export Extensions
-
-Import/Export Snippets using our VSCode and Google Chrome Extensions.
-
-![copy](https://i.imgur.com/MQ4aHfB.png)
-
-
-⚡️Discover Code Snippets
-
-Discover reusable code snippets shared on codekeep, and yes , we have dark mode.
-
-![copy](https://i.imgur.com/wzYsSpE.png)
-
-✅ Checkout: <a href="https://codekeep.io/" target="_BLANK">https://codekeep.io</a>
-
-
-## Show your support
-
-Give a ⭐️ if this project helped you! 🥰
-
-If you like this app , Star it on Github, Follow me on Twitter
-
-  <p align="center">
-   Made with ❤️ by <a href="https://twitter.com/JP1016v1"><img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/jp1016v1?style=social"> </a>
-  </p>
-
-
-`
+基于 [JP1016/Markdown](https://github.com/JP1016/Markdown) 修改的 WYSIWYG Markdown 编辑器。
+  `;
