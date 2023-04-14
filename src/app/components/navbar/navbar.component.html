@@ -25,7 +25,7 @@
         class="pointer"
         (click)="openEmojiDialog()"
         #tooltip="matTooltip"
-        [matTooltip]="'Add Emoji ⌘+Shift+E'"
+        [matTooltip]="'添加 Emoji Ctrl+Shift+E'"
         [matTooltipPosition]="'below'"
       >
         <i-feather class="fe-icon" name="smile"></i-feather>
@@ -33,39 +33,9 @@
 
       <button
         class="pointer"
-        (click)="formatText(CONTRIB_GUIDELINES_SELECT)"
-        #tooltip="matTooltip"
-        [matTooltip]="'Add Contributing Guidelines'"
-        [matTooltipPosition]="'below'"
-      >
-        <i-feather class="fe-icon" name="git-merge"></i-feather>
-      </button>
-
-      <button
-        class="pointer"
-        (click)="formatText(CONTRIB_LIST)"
-        #tooltip="matTooltip"
-        [matTooltip]="'Add Contributors List'"
-        [matTooltipPosition]="'below'"
-      >
-        <i-feather class="fe-icon" name="users"></i-feather>
-      </button>
-
-      <button
-        class="pointer"
-        (click)="formatText(LICENCE_SELECT)"
-        #tooltip="matTooltip"
-        [matTooltip]="'Add Licence'"
-        [matTooltipPosition]="'below'"
-      >
-        <i-feather class="fe-icon" name="book"></i-feather>
-      </button>
-
-      <button
-        class="pointer"
         (click)="copyMarkup()"
         #tooltip="matTooltip"
-        [matTooltip]="'Copy Markdown ⌘+Shift+M'"
+        [matTooltip]="'复制 Markdown 文本 Ctrl+Shift+M'"
         [matTooltipPosition]="'below'"
       >
         <i-feather class="fe-icon" name="copy"></i-feather>
@@ -75,13 +45,13 @@
         class="pointer"
         (click)="downloadMarkup()"
         #tooltip="matTooltip"
-        [matTooltip]="'Download Markdown ⌘+Shift+S'"
+        [matTooltip]="'下载 Markdown 文档 Ctrl+Shift+S'"
         [matTooltipPosition]="'below'"
       >
         <i-feather class="fe-icon" name="download"></i-feather>
       </button>
 
-      <!-- <button class="pointer" (click)="downloadMarkup()" #tooltip="matTooltip" [matTooltip]="'Load Template ⌘+Shift+S'"
+      <!-- <button class="pointer" (click)="downloadMarkup()" #tooltip="matTooltip" [matTooltip]="'Load Template Ctrl+Shift+S'"
         [matTooltipPosition]="'below'">
         <i-feather class="fe-icon" name="package"></i-feather>
       </button> -->
@@ -89,7 +59,7 @@
         class="pointer"
         (click)="newFile()"
         #tooltip="matTooltip"
-        [matTooltip]="'New Markdown'"
+        [matTooltip]="'新建 Markdown 文档'"
         [matTooltipPosition]="'below'"
       >
         <i-feather class="fe-icon" name="loader"></i-feather>
@@ -98,20 +68,10 @@
         class="pointer"
         (click)="loadMarkup()"
         #tooltip="matTooltip"
-        [matTooltip]="'Load Saved Markdown'"
+        [matTooltip]="'加载已保存的 Markdown 文档'"
         [matTooltipPosition]="'below'"
       >
         <i-feather class="fe-icon" name="hard-drive"></i-feather>
-      </button>
-
-      <button
-        class="pointer"
-        (click)="saveMarkup()"
-        #tooltip="matTooltip"
-        [matTooltip]="'Save as Template'"
-        [matTooltipPosition]="'below'"
-      >
-        <i-feather class="fe-icon" name="save"></i-feather>
       </button>
     </div>
 
@@ -119,7 +79,7 @@
       <span
         *ngIf="!fileName"
         #tooltip="matTooltip"
-        [matTooltip]="'Unsaved File, Click on save icon to save markdown.'"
+        [matTooltip]="'未保存文件，点击保存键来保存 Markdown 文档。'"
         [matTooltipPosition]="'below'"
       >
         <i-feather class="fe-icon warning" name="alert-circle"></i-feather>
@@ -133,14 +93,11 @@
       <a>
         <ntkme-github-button
           class="github-star"
-          user="jp1016"
-          repo="markdown"
+          user="BPCClub"
+          repo="Markdown"
           count="true"
         >
         </ntkme-github-button>
-      </a>
-      <a href="https://twitter.com/jp1016v1" target="_blank">
-        <i-feather class="fe-icon" name="twitter"></i-feather>
       </a>
 
       <a (click)="toggleMode()" class="pointer">
