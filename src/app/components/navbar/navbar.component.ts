@@ -8,11 +8,6 @@ import { ShortcutInput, AllowIn } from "ng-keyboard-shortcuts";
 import { Observable } from "rxjs";
 import { IndexedDB } from "ng-indexed-db";
 import { OptionsDialogComponent } from "../options-dialog/options-dialog.component";
-import {
-  CONTRIB_GUIDELINES_SELECT,
-  CONTRIB_LIST,
-  LICENCE_SELECT
-} from "src/app/constants/form-constants";
 import { SaveDialogComponent } from "../save-dialog/save-dialog.component";
 import { LoadDialogComponent } from "../load-dialog/load-dialog.component";
 
@@ -28,10 +23,6 @@ export class NavbarComponent implements OnInit {
   public fileName;
   shortcuts: ShortcutInput[] = [];
   $list: Observable<any>;
-
-  public CONTRIB_GUIDELINES_SELECT = CONTRIB_GUIDELINES_SELECT;
-  public CONTRIB_LIST = CONTRIB_LIST;
-  public LICENCE_SELECT = LICENCE_SELECT;
 
   constructor(
     @Inject(DOCUMENT) private document: Document,

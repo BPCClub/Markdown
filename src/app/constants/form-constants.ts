@@ -1,5 +1,3 @@
-import { CONTRIBUTION_GUIDE } from "./app-constants";
-
 export const IMAGE_SELECT = "image";
 export const LINK_SELECT = "link";
 export const SAVE_TEMPLATE = "save";
